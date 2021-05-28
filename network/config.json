@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Equipo 7"
+  },
+  "text": {
+    "more": "",
+    "intro": "Visualización de los viajes en bicileta durante el tiempo de captura de datos. \nLos nodos representan las estaciones y están escaladas a su grado (cantidad de viajes que llegan y salen)\nLos colores de los nodos representan la municipalidad.\nPor motivos de poder de computo se usaron solo 200,000 viajes de la base de datos original.",
+    "title": "Wonka Vis"
+  },
+  "legend": {
+    "edgeLabel": "Viajes en Bici",
+    "colorLabel": "Municipalidad",
+    "nodeLabel": "Estaciones"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "municipal",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": "station"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
